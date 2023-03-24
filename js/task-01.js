@@ -1,0 +1,14 @@
+const countCategories = document.querySelectorAll(".item").length;
+console.log(`Number of categories = ${countCategories}`);
+const animals = document.querySelector("h2").innerText;
+console.log(`Category: ${animals}`);
+const animalsElements = document.querySelectorAll("ul")[1].children.length;
+console.log(`Elements: ${animalsElements}`);
+const products = document.querySelectorAll("h2")[1].innerText;
+console.log(`Category: ${products}`);
+const productsElements = document.querySelectorAll("ul")[2].children.length;
+console.log(`Elements: ${productsElements}`);
+const technologies = document.querySelectorAll("h2")[2].innerText;
+console.log(`Category: ${technologies}`);
+const technologiesElements = document.querySelectorAll("ul")[3].children.length;
+console.log(`Elements: ${technologiesElements}`);

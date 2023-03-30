@@ -1,11 +1,11 @@
 let counterValue = 0;
 
 const counterValueHTML = document.querySelector("#value");
-console.log(counterValueHTML);
+// console.log(counterValueHTML);
 const decreaseButton = document.querySelector(`[data-action="decrement"]`);
-console.log(decreaseButton);
+// console.log(decreaseButton);
 const increaseButton = document.querySelector(`[data-action="increment"]`);
-console.log(increaseButton);
+// console.log(increaseButton);
 
 const updateCounterValue = (newValue) => {
   counterValue = newValue;
@@ -23,7 +23,7 @@ const decrease = () => {
 increaseButton.addEventListener("click", increase);
 decreaseButton.addEventListener("click", decrease);
 
-console.log(counterValue);
+// console.log(counterValue);
 
 // Second version
 

@@ -7,43 +7,51 @@ const ingredients = [
   "Condiments",
 ];
 
-const addFirstListItem = document.createElement(`li`);
-addFirstListItem.textContent = ingredients[0];
-addFirstListItem.classList.add("item");
-// console.log(addFirstListItem);
+for (let i = 0; i < ingredients.length; i++) {
+  const addListItem = document.createElement(`li`);
+  addListItem.textContent = ingredients[i];
+  addListItem.classList.add("item");
+  document.querySelector("#ingredients").append(addListItem);
+  console.log(addListItem);
+}
 
-const addSecondListItem = document.createElement(`li`);
-addSecondListItem.textContent = ingredients[1];
-addSecondListItem.classList.add("item");
-// console.log(addSecondListItem);
+// const addFirstListItem = document.createElement(`li`);
+// addFirstListItem.textContent = ingredients[0];
+// addFirstListItem.classList.add("item");
+// // console.log(addFirstListItem);
 
-const addThirdListItem = document.createElement(`li`);
-addThirdListItem.textContent = ingredients[2];
-addThirdListItem.classList.add("item");
-// console.log(addThirdListItem);
+// const addSecondListItem = document.createElement(`li`);
+// addSecondListItem.textContent = ingredients[1];
+// addSecondListItem.classList.add("item");
+// // console.log(addSecondListItem);
 
-const addFourthListItem = document.createElement(`li`);
-addFourthListItem.textContent = ingredients[3];
-addFourthListItem.classList.add("item");
-// console.log(addFourthListItem);
+// const addThirdListItem = document.createElement(`li`);
+// addThirdListItem.textContent = ingredients[2];
+// addThirdListItem.classList.add("item");
+// // console.log(addThirdListItem);
 
-const addFivethListItem = document.createElement(`li`);
-addFivethListItem.textContent = ingredients[4];
-addFivethListItem.classList.add("item");
-// console.log(addFivethListItem);
+// const addFourthListItem = document.createElement(`li`);
+// addFourthListItem.textContent = ingredients[3];
+// addFourthListItem.classList.add("item");
+// // console.log(addFourthListItem);
 
-const addSixthListItem = document.createElement(`li`);
-addSixthListItem.textContent = ingredients[5];
-addSixthListItem.classList.add("item");
-// console.log(addSixthListItem);
+// const addFivethListItem = document.createElement(`li`);
+// addFivethListItem.textContent = ingredients[4];
+// addFivethListItem.classList.add("item");
+// // console.log(addFivethListItem);
 
-const ingredientsList = document
-  .querySelector("#ingredients")
-  .append(
-    addFirstListItem,
-    addSecondListItem,
-    addThirdListItem,
-    addFourthListItem,
-    addFivethListItem,
-    addSixthListItem,
-  );
+// const addSixthListItem = document.createElement(`li`);
+// addSixthListItem.textContent = ingredients[5];
+// addSixthListItem.classList.add("item");
+// // console.log(addSixthListItem);
+
+// const ingredientsList = document
+//   .querySelector("#ingredients")
+//   .append(
+//     addFirstListItem,
+//     addSecondListItem,
+//     addThirdListItem,
+//     addFourthListItem,
+//     addFivethListItem,
+//     addSixthListItem,
+//   );

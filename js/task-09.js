@@ -8,10 +8,10 @@ const btn = document.querySelector(".change-color");
 const body = document.querySelector("body");
 const span = document.querySelector(".color");
 
-
 btn.addEventListener("click", (event) => {
-  body.style.backgroundColor = getRandomHexColor();
-  span.innerText = body.style.backgroundColor;
+  const colorHex = getRandomHexColor();
+  body.style.backgroundColor = colorHex;
+  span.innerText = colorHex;
   // console.log(event);
 });
 
